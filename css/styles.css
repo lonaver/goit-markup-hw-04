@@ -75,13 +75,33 @@ p {
   padding-bottom: 0px;
   padding-left: 15px;
   padding-right: 15px;
-  /*padding-top: 24px;
-  padding-bottom: 25px; */
   /* outline: 2px solid tomato; */
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
+  background-color: var(--color-background-black);
+  color: var(--color-white);
+
+  text-align: center;
+  /* for backgrond img */
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      var(--color-hero-bcg),
+      var(--color-hero-bcg)
+    ),
+    url("../images/HeroBCG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* outline: 2px solid rgb(43, 19, 115); */
+}
 .container-hero {
-  /* text-align: center; */
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
@@ -218,12 +238,10 @@ p {
   margin-right: 0px;
 }
 .our-priority-img {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 120px;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
   margin-bottom: 30px;
   background-color: var(--color-background-grey);
   /* outline: 2px solid tomato; */
@@ -266,18 +284,16 @@ clients-title {
   display: flex;
   align-items: center;
   justify-items: center;
-  padding-top: 0px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  gap: 10px;
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
   background-color: var(--color-white);
   /* outline: 2px solid tomato; */
 }
 .social > .item {
-  display: inline-block;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
   /* outline: 2px solid rgb(224, 83, 22); */
 }
 .list-social-link {
@@ -327,7 +343,8 @@ clients-title {
   border-radius: 0px 0px 4px 4px;
 }
 .profession {
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -421,30 +438,12 @@ clients-title {
   color: var(--color-white);
 }
 
-.hero {
-  background-color: var(--color-background-black);
-  color: var(--color-white);
-
-  text-align: center;
-
-  /* for backgrond img */
-  max-width: 1600px;
-  background-image: linear-gradient(
-      to right,
-      var(--color-hero-bcg),
-      var(--color-hero-bcg)
-    ),
-    url("../images/HeroBCG.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 /*clients*/
 .list-clients {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  border-radius: 4px;
   /* outline: 2px solid tomato; */
 }
 .list-clients > .item {
@@ -619,7 +618,6 @@ clients-title {
 
 .footer-link {
   display: inline-block;
-  margin-right: 140px;
 }
 
 .footer-address {
@@ -627,7 +625,7 @@ clients-title {
   font-size: 14px;
   line-height: 1.71;
   color: var(--color-white);
-  padding-top: 20px;
+  margin-top: 20px;
   /* outline: 2px solid rgb(229, 189, 181); */
 }
 .footer-address .link {
