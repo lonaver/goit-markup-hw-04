@@ -283,11 +283,9 @@ clients-title {
 .social {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   gap: 10px;
   margin-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
   background-color: var(--color-white);
   /* outline: 2px solid tomato; */
 }
@@ -297,11 +295,13 @@ clients-title {
   /* outline: 2px solid rgb(224, 83, 22); */
 }
 .list-social-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  padding: 12px;
   background-color: var(--color-white);
   /* outline: 2px solid rgb(224, 22, 130); */
 }
@@ -472,13 +472,13 @@ clients-title {
 }
 
 .clients-link:focus,
-.clients-link:hover,
+.clients-link:hover {
+  border-color: var(--color-blue);
+}
 .clients-link:focus .clients-icon,
 .clients-link:hover .clients-icon {
-  border-color: var(--color-blue);
   fill: var(--color-blue);
 }
-
 /*clients*/
 
 /* Portfolio */
@@ -517,14 +517,14 @@ clients-title {
 }
 .portfolio-list-link {
   background: var(--color-white);
-  border: 1px solid #eeeeee;
+  border: 1px solid rgb(238, 238, 238);
   box-shadow: none;
 }
 
 .portfolio-list-link:hover,
 .portfolio-list-link:focus {
   background: var(--color-white);
-  border: 1px solid #eeeeee;
+  border: 1px solid rgb(238, 238, 238);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -666,13 +666,15 @@ clients-title {
 .footer-list-social > .item:last-child {
   margin-right: 0px;
 }
-.footer-link.list-fsocial-link {
-  display: block;
+.list-fsocial-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 100%;
   border-radius: 50%;
   border-color: transparent;
-  padding: 12px;
   margin-right: 0;
   background-color: var(--color-icon-footer);
   /* outline: 2px solid rgb(224, 22, 130); */
@@ -686,7 +688,6 @@ clients-title {
 .footer-link.list-fsocial-link:hover,
 .footer-link.list-fsocial-link:focus {
   background-color: var(--color-blue);
-  /* fill: var(--color-white); */
 }
 .footer-social-img:hover,
 .footer-social-img:focus {
